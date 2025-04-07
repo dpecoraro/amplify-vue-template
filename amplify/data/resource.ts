@@ -13,6 +13,7 @@ const schema = a.schema({
       createdAt: a.string(),
       updatedAt: a.string(),
       _deleted: a.boolean(),
+      isDone: a.boolean(),
     })
     .authorization((allow) => [allow.owner()]),
 });
